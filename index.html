@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado Usco</title>
+    <link rel="icon" type="image/png" href="C:\Users\PedroContreras\Desktop\ahorcadousco\img1.png">
+    <link href="http://fonts.cdnfonts.com/css/sf-pixelate" rel="stylesheet">  <!-- fuentes -->
+    <link rel="stylesheet" href="styles.css" > <!-- Estilos -->
+    <script type="text/javascript" src="palabras.js" defer></script> <!-- se incluyen ambos script tanto del de palabras -->
+    <script type="text/javascript" src="script.js" defer></script> <!-- como el de js los dos con defer para que se carguen al final del body -->
+</head>
+<body>
+    <h1>Juega Ahorcado Usco</h1> <!-- título en la página -->
+    <div>
+        <canvas id="canvas"></canvas> <!-- es donde se va a dibujar el ahorcado -->
+        <div id="usedLetters"></div> <!-- van a ir todas las letras que vamos utilizando a medida que se va adivinando la palabra -->
+    </div>
+    <div id="usedLetters"></div> <!-- palabras usadas -->
+    <div id="wordContainer"></div> <!-- la palabra que hay que adivinar, al inicio son lineas vacías y luego se va completando -->
+    <button id="startButton">START</button> <!-- Boton start para dar comienzo al juego -->
+</body>
+</html>

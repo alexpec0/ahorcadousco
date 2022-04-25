@@ -1,0 +1,49 @@
+.hidden { /* se usa para que esta clase */
+    color: transparent; /* deje a las letras de color transparente, para que al inicio las palabras no se vean */
+}
+
+body { /* estilos del juego */
+    background-color: #8f141b; /* color de fondo */
+    color: #dfd4a6; /* color del texto */
+    font-family: 'SF Pixelate', sans-serif; /* se usa la fuente que es con forma de pixeles */
+    display: flex; /* visualización  */
+    flex-direction: column; /* para que se muestre todo hacia abajo */
+    justify-content: center; /* para mostrar todo centrado */
+    align-items: center; /* para centrar todo */
+}
+
+#wordContainer { /* se le da un margen al contenedor de las letras */
+    margin-top: 20px; /* margen de 20 pixeles */
+}
+
+.letter { /* a la letra */
+    margin: 0 7px; /* se le da un margen a los costados */
+    position: relative; /* se le da una posición relativa porque se va a agregar un after  */
+    text-align: center; /* se centra */
+}
+
+.letter::after{ /* dibuja el espacioq ue tiene cada letra */
+    content: ' '; /* se le da un content de un espacio */
+    display: block; /* se bloquea pa posición */
+    position: absolute; /* posicion absoluta */
+    left: 0; /* para que se ubique debajo de la letra */
+    width: 100%; /* ancho del 100X */
+    height: 1px; /* 1 pixel de altura */
+    background-color: #dfd4a6; /* para que sea una linea blanca*/
+    min-width: 12px; /* ancho minimo de 12 pixeles */
+}
+
+#startButton {  /* estilos dell boton start */
+    margin-top: 20px; /* margen de 20 pixeles arriba */
+    appearance: none; /* se le quita la apariencia que viene por defecto para los botones */
+    font-family: 'SF Pixelate', sans-serif; /* se le asigna la fuente especificamente al boton o si no toma la fuente por defecto*/
+    border: none; /* se le quita el borde  */
+    width: 300px; /* ancho de 300 pixeles  */
+    padding: 10px; /* padding de 10 pixeles para que se separe */
+    background: #dfd4a6; /* color de fondo del boton  */
+    color: #8f141b; /* color de la letra  */
+    font-weight: 600; /* front weight de 600 */
+    font-size: 20px; /*  20 pixeles */
+    border-radius: 4px; /* un radio pequeño para que se vea bordeado */
+    cursor: pointer; /*  para que se vea la manito cuando se le hace clic */
+}
